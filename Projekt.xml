@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<app>
+	<icon>"Resources/1.png"</icon>
+	<device>
+		<screen witdh="320" height="960" />	
+		<processor countOfProcesors = "4" takt="1200" />	
+		<ram memory="4096" />
+		<graphic>
+			<hardwareAcelaration>true</hardwareAcelaration>
+			<SoftwareAcelaration>false</SoftwareAcelaration>
+			<memory>256</memory>
+		</graphic>
+	</device>
+	<permissions>
+		<internet>true</internet>
+		<location>false</location>
+		<writeToStorage>true</writeToStorage>
+		<readStorage>true</readStorage>
+		<camera>true</camera>
+		<messages>true</messages>		
+	</permissions>
+	<enviroment>
+		<screenOrientation>Landscape</screenOrientation>
+		<theme style="dark" />
+		<notification show="true">
+			<newMessage diod="green"/>
+			<newFriend diod="blue"/>
+			<other diod="yellow"/>
+		</notification>		
+	</enviroment>
+	<profile>
+		<profileName>Jakub Šimůnek</profileName>
+		<pass>A84b45674_EUHI</pass>		
+		<lastLogin> 
+			<dateAndTime>10.04.2017 9:55</dateAndTime>
+			<ipAdress>254.21.14.21</ipAdress>
+			<locationLogin>Praha</locationLogin>
+		</lastLogin>
+		<about>
+			<age>24</age>
+			<from visitible="true">Žatec</from>
+			<email visitible="false">jakub.simunek@centrum.cz</email>
+			<actualWorkAt>
+				<destination>ČZU PEF</destination>
+				<workAt>Student</workAt>
+				<begin>2015</begin>
+			</actualWorkAt>
+			<beforeWorkAt>
+				<destination>ISŠT Most</destination>
+				<workAt>Student</workAt>
+				<begin>2009</begin>
+				<end>2009</end>
+			</beforeWorkAt>
+			<text>Bla bla bla</text>
+			<profileImage>"Datafiles/Profile/546137/profilePhoto.jpg"</profileImage>
+			<socialSites visitible="true">
+				<twitter>eibon</twitter>
+				<instagram></instagram>
+				<facebook>eibon</facebook>
+			</socialSites>
+			<likedPages show="true">
+				<page>
+					<pageName>Univerzita ČZU</pageName>
+					<pageText>Novinky z univerzity</pageText>
+				</page>				
+			</likedPages>
+		</about>
+	</profile>
+</app>

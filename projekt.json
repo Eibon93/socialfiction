@@ -1,0 +1,95 @@
+{
+	"app": {
+		"icon": "\"Resources/1.png\"",
+		"device": {
+			"screen": {
+				"_witdh": "320",
+				"_height": "960"
+			},
+			"processor": {
+				"_countOfProcesors": "4",
+				"_takt": "1200"
+			},
+			"ram": {
+				"_memory": "4096"
+			},
+			"graphic": {
+				"hardwareAcelaration": "true",
+				"SoftwareAcelaration": "false",
+				"memory": "256"
+			}
+		},
+		"permissions": {
+			"internet": "true",
+			"location": "false",
+			"writeToStorage": "true",
+			"readStorage": "true",
+			"camera": "true",
+			"messages": "true"
+		},
+		"enviroment": {
+			"screenOrientation": "Landscape",
+			"theme": {
+				"_style": "dark"
+			},
+			"notification": {
+				"newMessage": {
+					"_diod": "green"
+				},
+				"newFriend": {
+					"_diod": "blue"
+				},
+				"other": {
+					"_diod": "yellow"
+				},
+				"_show": "true"
+			}
+		},
+		"profile": {
+			"profileName": "Jakub Šimùnek",
+			"pass": "A84b45674_EUHI",
+			"lastLogin": {
+				"dateAndTime": "10.04.2017 9:55",
+				"ipAdress": "254.21.14.21",
+				"locationLogin": "Praha"
+			},
+			"about": {
+				"age": "24",
+				"from": {
+					"_visitible": "true",
+					"__text": "Žatec"
+				},
+				"email": {
+					"_visitible": "false",
+					"__text": "jakub.simunek@centrum.cz"
+				},
+				"actualWorkAt": {
+					"destination": "ÈZU PEF",
+					"workAt": "Student",
+					"begin": "2015"
+				},
+				"beforeWorkAt": {
+					"destination": "ISŠT Most",
+					"workAt": "Student",
+					"begin": "2009",
+					"end": "2009"
+				},
+				"text": "Bla bla bla",
+				"profileImage": "\"Datafiles/Profile/546137/profilePhoto.jpg\"",
+				"socialSites": {
+					"twitter": "eibon",
+					"instagram": "",
+					"facebook": "eibon",
+					"_visitible": "true"
+				},
+				"likedPages": {
+					"page": {
+						"pageName": "Univerzita ÈZU",
+						"pageText": "Novinky z univerzity"
+					},
+					"_show": "true"
+				}
+			}
+		}
+	}
+}
