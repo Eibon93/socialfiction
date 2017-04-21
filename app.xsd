@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Thu Apr 20 2017 16:44:12 GMT+0200 (Románské země (letní čas)) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="app">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="icon" type="xs:string"></xs:element>
+                           <xs:element name="device">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="screen">
+                                                   <xs:complexType>
+                                                         <xs:attribute name="witdh" type="xs:int"></xs:attribute>
+                                                         <xs:attribute name="height" type="xs:int"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="processor">
+                                                   <xs:complexType>
+                                                         <xs:attribute name="countOfProcesors" type="xs:int"></xs:attribute>
+                                                         <xs:attribute name="takt" type="xs:int"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="ram">
+                                                   <xs:complexType>
+                                                         <xs:attribute name="memory" type="xs:int"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="graphic">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="hardwareAcelaration" type="xs:string"></xs:element>
+                                                               <xs:element name="SoftwareAcelaration" type="xs:string"></xs:element>
+                                                               <xs:element name="memory" type="xs:int"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="permissions">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="internet" type="xs:string"></xs:element>
+                                             <xs:element name="location" type="xs:string"></xs:element>
+                                             <xs:element name="writeToStorage" type="xs:string"></xs:element>
+                                             <xs:element name="readStorage" type="xs:string"></xs:element>
+                                             <xs:element name="camera" type="xs:string"></xs:element>
+                                             <xs:element name="messages" type="xs:string"></xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="enviroment">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="screenOrientation" type="xs:string"></xs:element>
+                                             <xs:element name="theme">
+                                                   <xs:complexType>
+                                                         <xs:attribute name="style" type="xs:string"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="notification">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="newMessage">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="diod" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="newFriend">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="diod" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="other">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="diod" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                         <xs:attribute name="show" type="xs:string"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="profile">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="profileName" type="xs:string"></xs:element>
+                                             <xs:element name="pass" type="xs:string"></xs:element>
+                                             <xs:element name="lastLogin">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="dateAndTime" type="xs:string"></xs:element>
+                                                               <xs:element name="ipAdress" type="xs:string"></xs:element>
+                                                               <xs:element name="locationLogin" type="xs:string"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="about">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="age" type="xs:int"></xs:element>
+                                                               <xs:element name="from" type="xs:string">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="visitible" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="email" type="xs:string">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="visitible" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="actualWorkAt">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="destination" type="xs:string"></xs:element>
+                                                                                 <xs:element name="workAt" type="xs:string"></xs:element>
+                                                                                 <xs:element name="begin" type="xs:int"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="beforeWorkAt">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="destination" type="xs:string"></xs:element>
+                                                                                 <xs:element name="workAt" type="xs:string"></xs:element>
+                                                                                 <xs:element name="begin" type="xs:int"></xs:element>
+                                                                                 <xs:element name="end" type="xs:int"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="text" type="xs:string"></xs:element>
+                                                               <xs:element name="profileImage" type="xs:string"></xs:element>
+                                                               <xs:element name="socialSites">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="twitter" type="xs:string"></xs:element>
+                                                                                 <xs:element name="instagram"></xs:element>
+                                                                                 <xs:element name="facebook" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                           <xs:attribute name="visitible" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="likedPages">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="page">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="pageName" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="pageText" type="xs:string"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                           <xs:attribute name="show" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>
+ 

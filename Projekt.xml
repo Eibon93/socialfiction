@@ -29,7 +29,7 @@
 			<other diod="yellow"/>
 		</notification>		
 	</enviroment>
-	<profile>
+	<profile save="true">
 		<profileName>Jakub Šimůnek</profileName>
 		<pass>A84b45674_EUHI</pass>		
 		<lastLogin> 
@@ -59,7 +59,7 @@
 				<instagram></instagram>
 				<facebook>eibon</facebook>
 			</socialSites>
-			<likedPages show="true">
+			<likedPages visitible="true">
 				<page>
 					<pageName>Univerzita ČZU</pageName>
 					<pageText>Novinky z univerzity</pageText>
