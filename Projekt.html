@@ -1,0 +1,337 @@
+<html>
+	<head>
+		<title>Stránky Projektu SocialFiction</title>
+	</head>	
+	<body>
+		<header>Stránky Projektu SocialFiction</header>
+		
+		<main>
+			<nav>
+				<section>
+					<ul>
+						<a href="uvod"><li>Popis projektu</li></a>
+					</ul>
+				</section>
+			</nav>
+			<article>
+				<h1 id="uvod">Popis projektu</h1>
+				<p>
+					Projekt popisuje fiktivní konfiguraèní soubor pro mobilní aplikaci fiktivní sociální sítì SocialFiction.<br>
+					Projekt obsahuje:<br>
+					<ul>
+						<li>Konfiguraèní soubor Projekt.xml</li>
+						<li>Dokumentaci projektu projekt.html</li>
+						<li>Konfiguraèní soubor ve formátu JSON projekt.json</li>
+						<li>soubor pro transformaci projekt.xsl</li>
+					</ul>
+				</p>
+				<h1 id="metodika">Metodika</h1>
+				<p>
+					Použité nástroje:<br>				
+					<ul>
+						<li>Notepad++</li>
+						<li>Google Chrome</li>					
+					</ul>
+				</p>
+				<h1 id="atributy">Popis Atributù a elementù</h1>
+				<p>
+					<h2 id="app">app</h2>
+					<p>Koøenový element konfiguraèního souboru</p>
+					
+					<h2 id="icon">icon</h2>
+					<p>Soubor kde se nachází ikonka aplikace</p>
+					
+					<h2 id="device">device</h2>
+					<p>Koøenový element informací o zaøízení</p>
+					
+					<h3 id="screen">screen</h3>
+					<p>
+					Informace o rozlišení obrazovky
+					<table rules="all" frame="box">
+						<tr>
+							<td colspan="2">Atributy<td>
+						<tr>
+						<tr>
+							<td>width</td>
+							<td>Šíøka v pixelech</td>
+						<tr>
+						<tr>
+							<td>height</td>
+							<td>Výška v pixelech</td>
+						<tr>
+					</table>
+					
+					<h3 id="processor">processor</h3>
+					<p>
+					Informace o procesoru zaøízení
+					<table rules="all" frame="box">
+						<tr>
+							<td colspan="2">Atributy<td>
+						<tr>
+						<tr>
+							<td>countOfProcesors</td>
+							<td>Poèet jader procesoru</td>
+						<tr>
+						<tr>
+							<td>takt</td>
+							<td>frekvence jádra</td>
+						<tr>
+					</table>
+					
+					<h3 id="ram">Ram</h3>
+					<p>
+					Informace o Ram pamìti zaøízení
+					<table rules="all" frame="box">
+						<tr>
+							<td colspan="2">Atributy<td>
+						<tr>
+						<tr>
+							<td>memory</td>
+							<td>Velikost pamìti RAM</td>
+						<tr>						
+					</table>					
+					</p>
+					
+					<h3 id="graphic">graphic</h3>
+					<p>
+					Koøenový element pro informace k vykreslování										
+					</p>
+					
+					<h4 id="hardwareAcelaration">hardwareAcelaration</h4>
+					<p>
+					Je povolena hardwerová akcelarace										
+					</p>
+					
+					<h4 id="SoftwareAcelaration">SoftwareAcelaration</h4>
+					<p>
+					Je povolena softwarová akcelarace										
+					</p>
+					
+					<h4 id="memory">memory</h4>
+					<p>
+					Velikost grafické pamìti									
+					</p>
+					
+					<h2 id="permissions">permissions</h2>
+					<p>Koøenový element informací o povoleních</p>
+					
+					<h3 id="internet">internet</h3>
+					<p>
+					Je povolen pro aplikaci pøístup k internetu									
+					</p>
+					
+					<h3 id="location">location</h3>
+					<p>
+					Je povolen pro aplikaci pøístup k poloze								
+					</p>
+					
+					<h3 id="writeToStorage">writeToStorage</h3>
+					<p>
+					Je aplikaci povoleno zapisovat na úložištì							
+					</p>					
+					
+					<h3 id="readStorage">readStorage</h3>
+					<p>
+					Je aplikaci povoleno štení z úložištì						
+					</p>
+					
+					<h3 id="camera">camera</h3>
+					<p>
+					Je aplikaci povolena práce s kamerou					
+					</p>
+					
+					<h3 id="messages">messages</h3>
+					<p>
+					Je aplikaci povolena práce se zprávami					
+					</p>
+					
+					<h2 id="enviroment">enviroment</h2>
+					<p>
+					Koøenový element pro práci s prostøedím telefonu									
+					</p>
+					
+					<h3 id="screenOrientation">screenOrientation</h3>
+					<p>
+					Jaké má být otoèení displeje
+					</p>
+					
+					<h3 id="theme">theme</h3>
+					<p>
+					Grafický styl aplikace
+					<table rules="all" frame="box">
+						<tr>
+							<td colspan="2">Atributy<td>
+						<tr>
+						<tr>
+							<td>style</td>
+							<td>název grafického stylu aplikace</td>
+						<tr>						
+					</table>
+					</p>
+
+					<h3 id="notification">notification</h3>
+					<p>
+					Koøenový element pro práci s upozornìním
+					<table rules="all" frame="box">
+						<tr>
+							<td colspan="2">Atributy<td>
+						<tr>
+						<tr>
+							<td>show</td>
+							<td>je povoleno zobrazování upozornìní</td>
+						<tr>						
+					</table>
+					</p>	
+						
+					<h4 id="newMessage">newMessage</h4>
+					<p>
+					Zobrazení pøíchozí nové zprávy	
+					<table rules="all" frame="box">
+						<tr>
+							<td colspan="2">Atributy<td>
+						<tr>
+						<tr>
+							<td>diod</td>
+							<td>nastavení diody pro zobrazení nové zprávy</td>
+						<tr>						
+					</table>					
+					</p>
+					
+					<h4 id="newFriend">newFriend</h4>
+					<p>
+					Zobrazení žádosti o pøátelství
+					<table rules="all" frame="box">
+						<tr>
+							<td colspan="2">Atributy<td>
+						<tr>
+						<tr>
+							<td>diod</td>
+							<td>nastavení diody pro zobrazení žádosti o pøátelství</td>
+						<tr>						
+					</table>					
+					</p>
+					
+					<h4 id="other">other</h4>
+					<p>
+					Zobrazení ostatních upozornìní
+					<table rules="all" frame="box">
+						<tr>
+							<td colspan="2">Atributy<td>
+						<tr>
+						<tr>
+							<td>diod</td>
+							<td>nastavení diody pro zobrazení ostatních upozornìní</td>
+						<tr>						
+					</table>					
+					</p>
+					
+					<h2 id="profile">profile</h2>
+					<p>
+					Koøenový element pro zálohu profilu					
+					</p>
+					
+					<h3 id="profileName">profileName</h3>
+					<p>
+					Jméno profilu
+					</p>
+					
+					<h3 id="pass">pass</h3>
+					<p>
+					Zahashovaný heslo profilu
+					</p>
+					
+					<h3 id="lastLogin">lastLogin</h3>
+					<p>
+					Koøenový element pro poslední pøihlášení
+					</p>
+					
+					<h4 id="dateAndTime">dateAndTime</h4>
+					<p>
+					Datum a èas posledního pøihlášení
+					</p>
+					
+					<h4 id="ipAdress">ipAdress</h4>
+					<p>
+					Ip adresa posledního pøihlášení
+					</p>
+					
+					<h4 id="locationLogin">locationLogin</h4>
+					<p>
+					Pøibližná adresa posledního pøihlášení
+					</p>
+					
+					<h3 id="about">about</h3>
+					<p>
+					Koøenový element pro podrobnostech o profilu
+					</p>
+					
+					<h4 id="age">age</h4>
+					<p>
+					zobrazení vìku
+					</p>
+					
+					<h4 id="from">from</h4>
+					<p>
+					Místo bydlištì
+					<table rules="all" frame="box">
+						<tr>
+							<td colspan="2">Atributy<td>
+						<tr>
+						<tr>
+							<td>visible</td>
+							<td>je tato informace viditelná pro ostatní uživatele</td>
+						<tr>						
+					</table>					
+					</p>
+					
+					<h4 id="email">email</h4>
+					<p>
+					Email uživatele
+					<table rules="all" frame="box">
+						<tr>
+							<td colspan="2">Atributy<td>
+						<tr>
+						<tr>
+							<td>visible</td>
+							<td>je tato informace viditelná pro ostatní uživatele</td>
+						<tr>						
+					</table>					
+					</p>
+					
+					<h4 id="actualWorkAt">actualWorkAt</h4>
+					<p>
+					Aktualní zamìstnání									
+					</p>
+					
+					<h5 id="destination">destination</h5>
+					<p>
+					Místo pracovištì								
+					</p>
+					
+					<h5 id="workAt">workAt</h5>
+					<p>
+					Pracovní pozice							
+					</p>
+					
+					<h5 id="begin">begin</h5>
+					<p>
+					Odkdy zde pracuje						
+					</p>
+					
+					
+					
+					
+					
+					
+				</p>
+			
+			</article>		
+		</main>
+		
+		<footer>
+			Jakub Šimùnek, SYI 2		
+		</footer>
+		
+	
+	</body>
+</html>
