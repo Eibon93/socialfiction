@@ -7,8 +7,8 @@
 		<processor countOfProcesors = "4" takt="1200" />	
 		<ram memory="4096" />
 		<graphic>
-			<hardwareAcelaration>true</hardwareAcelaration>
-			<SoftwareAcelaration>false</SoftwareAcelaration>
+			<hardwareAccelaration>true</hardwareAccelaration>
+			<SoftwareAccelaration>false</SoftwareAccelaration>
 			<memory>256</memory>
 		</graphic>
 	</device>
@@ -23,6 +23,7 @@
 	<enviroment>
 		<screenOrientation>Landscape</screenOrientation>
 		<theme style="dark" />
+		<compressImage>true</compressImage>
 		<notification show="true">
 			<newMessage diod="green"/>
 			<newFriend diod="blue"/>
@@ -39,6 +40,7 @@
 		</lastLogin>
 		<about>
 			<age>24</age>
+			<birthday visitible="true">28.1</birthday>
 			<from visitible="true">Žatec</from>
 			<email visitible="false">jakub.simunek@centrum.cz</email>
 			<actualWorkAt>
@@ -54,6 +56,7 @@
 			</beforeWorkAt>
 			<text>Bla bla bla</text>
 			<profileImage>"Datafiles/Profile/546137/profilePhoto.jpg"</profileImage>
+			<otherPhoto>"Datafiles/Profile/546137/photos"</otherPhoto>
 			<socialSites visitible="true">
 				<twitter>eibon</twitter>
 				<instagram></instagram>
@@ -63,6 +66,7 @@
 				<page>
 					<pageName>Univerzita ČZU</pageName>
 					<pageText>Novinky z univerzity</pageText>
+					<numberOfPeople>42</numberOfPeople>
 				</page>				
 			</likedPages>
 		</about>

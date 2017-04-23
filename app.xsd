@@ -38,8 +38,8 @@
               <xs:element name="graphic">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element type="xs:string" name="hardwareAcelaration"/>
-                    <xs:element type="xs:string" name="SoftwareAcelaration"/>
+                    <xs:element type="xs:string" name="hardwareAccelaration"/>
+                    <xs:element type="xs:string" name="SoftwareAccelaration"/>
                     <xs:element type="xs:short" name="memory"/>
                   </xs:sequence>
                 </xs:complexType>
@@ -72,6 +72,7 @@
                   </xs:simpleContent>
                 </xs:complexType>
               </xs:element>
+              <xs:element type="xs:string" name="compressImage"/>
               <xs:element name="notification">
                 <xs:complexType>
                   <xs:sequence>
@@ -127,6 +128,15 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element type="xs:byte" name="age"/>
+                    <xs:element name="birthday">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:float">
+                            <xs:attribute type="xs:string" name="visitible"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
                     <xs:element name="from">
                       <xs:complexType>
                         <xs:simpleContent>
@@ -166,6 +176,7 @@
                     </xs:element>
                     <xs:element type="xs:string" name="text"/>
                     <xs:element type="xs:string" name="profileImage"/>
+                    <xs:element type="xs:string" name="otherPhoto"/>
                     <xs:element name="socialSites">
                       <xs:complexType>
                         <xs:sequence>
@@ -184,6 +195,7 @@
                               <xs:sequence>
                                 <xs:element type="xs:string" name="pageName"/>
                                 <xs:element type="xs:string" name="pageText"/>
+                                <xs:element type="xs:byte" name="numberOfPeople"/>
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>
